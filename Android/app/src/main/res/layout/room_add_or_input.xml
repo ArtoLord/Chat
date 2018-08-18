@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/add_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn"
+                android:layout_height="wrap_content"
+                android:hint="Input RoomName"/>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:text="Add"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegister"
+    tools:context="com.example.root.forhelp.RegisterActivity">
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/tl3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login(nick):"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            />
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_below="@+id/tl3"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:id="@+id/tl4"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            />
+        <EditText
+            android:id="@+id/pass"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:inputType="textPassword"
+            />
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Accept"
+        android:onClick="regUser"
+        android:background="@color/colorButton"/>
+
+
+</RelativeLayout>

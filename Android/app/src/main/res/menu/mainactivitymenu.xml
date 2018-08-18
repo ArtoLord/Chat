@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        app:showAsAction="always"
+        android:icon="@drawable/outline_add_white_24"
+        android:title="Reload"/>
+
+<item
+android:id="@+id/action_go_to_room"
+app:showAsAction="always"
+android:icon="@drawable/baseline_forward_white_24"
+android:title="Reload"/>
+
+    <item
+        android:id="@+id/action_exit"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_forward_white_24"
+        android:title="Exit"/>
+
+    </menu>

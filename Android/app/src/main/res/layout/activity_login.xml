@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.forhelp.LoginActivity"
+    android:background="@color/colorPrimary"
+    >
+<TableLayout
+    android:layout_width="212dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/tableLayout"
+    android:layout_above="@id/textv">
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/login"
+        android:textColor="#eedefa"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/pass"
+        android:textColor="#eedefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter"
+        android:layout_alignLeft="@+id/tableLayout"
+        android:layout_alignStart="@+id/tableLayout"
+        android:text="" />
+</TableLayout>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/textv"
+        android:text="No account now? Tap to create."
+        android:clickable="true"
+        android:onClick="register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor"
+        android:textScaleX="1.2"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <Button
+        android:onClick="enterUser"
+        android:text="enter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/enter"
+        android:background="@color/colorButton"/>
+
+</RelativeLayout>
+
+

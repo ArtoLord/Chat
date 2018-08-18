@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_invite"
+        app:showAsAction="never"
+        android:title="Invite user"/>
+    <item
+        android:id="@+id/action_add_avatar"
+        app:showAsAction="never"
+        android:title="add_avatar"/>
+</menu>
